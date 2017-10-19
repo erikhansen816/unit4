@@ -43,13 +43,13 @@ def moveBanana():
     banana.y = randint(0,ROWS-1)*CELL_SIZE
 
 def updateScore():
-    date['score'] += 10
+    data['score'] += 10
     print(data['score'])
 
 if __name__ == '__main__':
     
     data = {}
-    date['score'] = 0
+    data['score'] = 0
     
     green = Color(0x006600,1)
     brown = Color(0x8B4513,1)
