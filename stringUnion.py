@@ -3,9 +3,19 @@
 #stringUnion.py
 
 def stringUnion(word1,word2):
-    print(word1)
-    print(word2)
+    totalStr = ''
+    totalStr += word1
+        
+    totalStr +=word2
+    finalStr = ''
+    for ch in totalStr:
+        if ch in word1:
+            if not ch in finalStr:
+                finalStr += ch
+        if ch in word2:
+            if not ch in finalStr:
+                finalStr+= ch
+    return finalStr
     
-    
-stringUnion('Hello','Hi')
+print(stringUnion('mississippi','pennsylvania'))
     
